@@ -1,0 +1,164 @@
+body{
+
+    background: #C4DFDF !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.height{
+
+    height: 100vh;
+}
+
+.form{
+
+    position: relative;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+
+}
+
+.form span{
+
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+   
+   padding-left: 10px;
+}
+
+.form-input{
+
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+
+.form-input:focus{
+
+    box-shadow: none;
+    border:none;
+}
+.photo-container{
+    position: absolute;
+    top: 300px;
+    left: 133px;
+}
+.photo{
+    width: 130px;
+}
+
+.search-box{
+    position: relative;
+    transform: translateY(0);
+    transition: transform 1s ease;
+}
+
+.search-box:focus-within {
+    transform: translateY(-200px);
+}
+.table-container {
+  max-width: 636px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  top: -520px;
+  left: -20px;
+  /* transform: scale(0); */
+  display: none;
+  
+}
+.table-container.visible {
+  display: block; /* Show the element */
+  /* Change the transform property to scale up the element to normal size */
+  /* transform: scale(1); */
+}
+
+.responsive-table {
+    li {
+      border-radius: 17px;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+    .table-row {
+      background-color: #ffffff;
+      box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+      height: 53px;
+    }
+    .edit{
+        width: 2rem;
+        padding: 0.1rem;
+    }
+    .col-1 {
+      flex-basis: 20%;
+    }
+    .col-2 {
+      flex-basis: 25%;
+    }
+    .col-3 {
+      flex-basis: 20%;
+    }
+    
+    @media all and (max-width: 767px) {
+      .table-header {
+        display: none;
+      }
+      .table-row{
+        
+      }
+      li {
+        display: block;
+      }
+      .col {
+        
+        flex-basis: 100%;
+        
+      }
+      .col {
+        display: flex;
+        padding: 10px 0;
+        &:before {
+          color: #6C7A89;
+          padding-right: 10px;
+          content: attr(data-label);
+          flex-basis: 50%;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

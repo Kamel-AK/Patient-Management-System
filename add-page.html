@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="search-style.css">
+    <title>Add page</title>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.css">
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+    <script src="jquery-jquery-f79d5f1/dist/jquery.min.js"></script>
+    <link rel="icon" href="Untitled-1.svg">
+
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand">DR.Mohamed</a>
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-primary me-2" id="back-btn">Back</button>
+                <button id="data-page-btn" class="btn btn-outline-primary me-2">View patients</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="row height d-flex justify-content-center align-items-center">
+            <div class="col-md-6">
+                <form id="myForm">
+                    <div class="form-floating mb-3">
+                        <input type="text" name="name" class="form-control" id="Patient_name_input">
+                        <label id="Label1" for="Patient_name_input">Patient name</label>
+                    </div>
+                    <div class="mb-3">
+                        <label id="Label2" for="exampleInputPassword1" class="form-label">File number</label>
+                        <input type="number" class="form-control" id="file_number" min="0"
+                            onkeydown="return checkKey(event)">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="add-btn">ADD</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="photo-container">
+        <img class="photo" src="5160425.png" alt="">
+    </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+</body>
+<script src="app.js"></script>
+
+</html>
