@@ -1,9 +1,9 @@
 # Patient Management System
-```markdown
+
 
 A web-based application for managing patient records, designed for healthcare professionals to efficiently handle patient data with search, add, and delete functionalities.
 
-![Screenshot 2024-06-30 at 12-35-14 Search page](https://github.com/user-attachments/assets/3f7bcc82-816a-4890-9df4-28c75e7a9528)
+![Demo Screenshot](https://github.com/user-attachments/assets/3f7bcc82-816a-4890-9df4-28c75e7a9528) <!-- Replace with actual screenshot -->
 
 ## Features
 
