@@ -120,4 +120,3 @@ patient-management-system/
 - Bootstrap team for responsive UI components
 - jQuery team for JS utilities
 - PHP community for server-side scripting capabilities
-```
